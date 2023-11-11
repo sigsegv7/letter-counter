@@ -48,7 +48,7 @@ try_dump_count(uint32_t counters[COUNTER_BUF_SIZE], unsigned int i)
     if ((counters[i] & (1 << 31)) != 0) {
         c = counters[i] & 0xFF;
         count = (counters[i] >> 8) & 0xFFFF;
-        printf("%d instances of %c\n", count, c);
+        printf("%d instance(s) of %c\n", count, c);
     }
 }
 
